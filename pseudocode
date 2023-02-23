@@ -1,0 +1,123 @@
+#This pseudo code generates the sql query to list out university and courses that matches subject input by user
+
+
+get subject selected by user and store them in a list, selected_sub;
+get subject_grades selected by user and store them in another list, selected_gra;
+get selected_fac;
+
+convert elements of selected_gra to C6 if they are A1, B2, B3, C4, C5, C6, else leave them as they are;
+selected_gra is updated;
+
+function go(selected_sub, selected_gra):
+
+
+	generate basesql query: select courseID from req_olevel, universities, where uniID_offering = uniID;
+
+	create two lists that stores the fields each of the subs belongs to;
+
+	#cat1 contains the list of the individual fields the subject in the list_of_subs belong to, eg Social Science subjects, etc...
+	#cat2 contains the list of double fields the subjects in the list_of_subs belong to, eg Art / Social Science subject, etc...
+
+	#Adding tweak values is added to the basesql query
+
+	if course_fac is selected:
+		add selected course_fac to the sql query;
+	else:
+		pass;
+
+	if uni_type is selected:
+		add selected uni_type to the sql query;
+	else:
+		pass;
+
+	if uni_state is selected:
+		add selected uni_state to the sql query;
+	else:
+		pass;
+
+	if uni_name is selected:
+		add selected uni_name to the sql query;
+	else:
+		pass;
+
+	# Forming the Query from subjects
+	#For subject A: Which is always English
+
+	#colma is the part of the query that will go to the first column with the subject in the req_olevel table
+
+	if selectedgra[0] equals "AR" or "C6":
+		pass;
+	else:
+		colma = add selected_grade to the query
+
+	# All subjects are explicitly stated, starting from sub B - E
+		for each column:
+			colm = select courseID where the column = selectedsub
+
+	sqlstring = baseexec + colma + colm
+	sql.execute(sqlstring)
+	list courseID = result_of_execution()
+
+	colm.empty()
+	#Three subjects are explicitly stated
+	for column B to D
+		select courseID where the column = selectedsub
+	for column E:
+		colme = select courseID where column = cat1
+		colme = select courseID where column = cat2
+		colme = select courseID where column = "all"
+	sqlstring = baseexec + colma + colm + colme
+	sql.execute(sqlstring)
+	list courseID = result_of_execution()
+
+	#Two subjects are explicitly stated
+	for column B to C
+		select courseID where the column = selectedsub
+	for column D:
+		colmd = select courseID where column = cat1
+		colmd = select courseID where column = cat2
+		colmd = select courseID where column = "all"
+	for column E:
+		colme = select courseID where column = cat1
+		colme = select courseID where column = cat2
+		colme = select courseID where column = "all"
+	sqlstring = baseexec + colma + colm + colmd + colme
+	sql.execute(sqlstring)
+	list courseID = result_of_execution()
+
+	#One subject is explicitly stated
+	for column B
+		select courseID where the column = selectedsub
+	for column C:
+		colmc = select courseID where column = cat1
+		colmc = select courseID where column = cat2
+		colmc = select courseID where column = "all"
+	for column D:
+		colmd = select courseID where column = cat1
+		colmd = select courseID where column = cat2
+		colmd = select courseID where column = "all"
+	for column E:
+		colme = select courseID where column = cat1
+		colme = select courseID where column = cat2
+		colme = select courseID where column = "all"
+	sqlstring = baseexec + colma + colm + colmd + colme
+	sql.execute(sqlstring)
+	list courseID = result_of_execution()
+
+#Remove duplicates from Course ID
+for i in courseID:
+	if i appears more than once:
+		maintain only a version of i
+
+for i in courseID:
+	select course_name, uni_name, uni_site, uni_state, uni_rank from db; store in a tupule;
+
+display results from tupule except uni_rank to the table
+
+if order_by_uniname is checked:
+	order results in table by uniname;
+else if order_by_coursename is checked:
+	order results in table by coursename;
+else:
+	order results by uni_rank
+

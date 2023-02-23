@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1000</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>201</width>
+       <height>601</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 0, 127);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QToolButton" name="backtoinsert">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 10pt &quot;Arial&quot;;
+	font-weight: bold;
+}
+QToolButton:hover {
+	background-color: rgb(0, 0, 127);
+color: rgb(255, 255, 255);
+	
+	font: 10pt &quot;Arial&quot;;
+font-weight: bold;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Insert O' level Page</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toTweak">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 10pt &quot;Arial&quot;;
+	font-weight: bold;
+}
+QToolButton {
+color: rgb(255, 255, 255);
+	
+	font: 10pt &quot;Arial&quot;;
+font-weight: bold;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Tweak Page</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toDisplay">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font: 10pt &quot;Arial&quot;;
+	font-weight: bold;
+}
+QToolButton {
+color: rgb(255, 255, 255);
+	
+	font: 10pt &quot;Arial&quot;;
+font-weight: bold;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Final Display Page</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>60</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(255, 255, 255);
+
+font: 75 35pt &quot;Magneto&quot;;</string>
+      </property>
+      <property name="text">
+       <string>CUR</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>20</y>
+       <width>571</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 16, 49);
+
+font: 36pt &quot;Arial Rounded MT Bold&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>Insert O' level Page</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>100</y>
+       <width>761</width>
+       <height>501</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#frame{border-color: rgb(0, 0, 127);
+background-color: rgb(238, 238, 238);
+selection-color: rgb(0, 0, 255);}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>90</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 14pt &quot;Arial&quot;;
+background-color: rgb(238, 238, 238);</string>
+      </property>
+      <property name="text">
+       <string>Please select subject &amp; grade</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="warning">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>120</y>
+        <width>271</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(238, 238, 238);
+color: rgb(159, 4, 6);
+font: 75 italic 10pt &quot;Arial&quot;;</string>
+      </property>
+      <property name="text">
+       <string>*If awaiting result, select A/R*</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>271</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 14pt &quot;Arial&quot;;
+background-color: rgb(238, 238, 238);</string>
+      </property>
+      <property name="text">
+       <string>Faculty (optional)</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="facul">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+                border: 1px solid black;
+                border-radius: 0px;
+             }
+ 
+             QComboBox::drop-down {
+                width: 32px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+             }
+ 
+             QComboBox::down-arrow {
+                image: C:\Users\Oluwayemisi\Downloads
+                width: 32;
+                height: 32;
+             }</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>180</y>
+        <width>281</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_4{
+border-radius: 10px;
+
+
+}  
+
+  
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QComboBox" name="suba">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+                border: 1px solid grey;
+                border-radius: 0px;
+             }
+ 
+             QComboBox::drop-down {
+                width: 32px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+             }
+ 
+             QComboBox::down-arrow {
+                image: C:\Users\Oluwayemisi\Downloads
+                width: 32;
+                height: 32;
+             }</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub1A1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>A1</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub1B2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>B2</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub1B3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>B3</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub1C4">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C4</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub1C5">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>60</y>
+         <width>51</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C5</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub1C6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C6</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub1D7">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>D7</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub1E8">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>E8</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub1F9">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>F9</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub1AR">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>80</y>
+         <width>51</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>A/R</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_5">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>330</y>
+        <width>281</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_5{
+border-radius: 10px;
+
+
+}  
+
+  
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QComboBox" name="subb">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+                border: 1px solid grey;
+                border-radius: 0px;
+             }
+ 
+             QComboBox::drop-down {
+                width: 32px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+             }
+ 
+             QComboBox::down-arrow {
+                image: C:\Users\Oluwayemisi\Downloads
+                width: 32;
+                height: 32;
+             }</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub2A1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>A1</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub2B2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>B2</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub2B3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>B3</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub2C4">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C4</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub2C5">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>60</y>
+         <width>51</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C5</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub2C6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C6</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub2D7">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>D7</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub2E8">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>E8</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub2F9">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>F9</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub2AR">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>80</y>
+         <width>51</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>A/R</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_6">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>40</y>
+        <width>281</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_6{
+border-radius: 10px;
+
+
+}  
+
+  
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QComboBox" name="subc">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+                border: 1px solid grey;
+                border-radius: 0px;
+             }
+ 
+             QComboBox::drop-down {
+                width: 32px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+             }
+ 
+             QComboBox::down-arrow {
+                image: C:\Users\Oluwayemisi\Downloads
+                width: 32;
+                height: 32;
+             }</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub3A1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>A1</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub3B2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>B2</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub3B3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>B3</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub3C4">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C4</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub3C5">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>60</y>
+         <width>51</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C5</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub3C6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C6</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub3D7">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>D7</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub3E8">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>E8</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub3F9">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>F9</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub3AR">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>80</y>
+         <width>51</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>A/R</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_7">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>190</y>
+        <width>281</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_7{
+border-radius: 10px;
+
+
+}  
+
+  
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QComboBox" name="subd">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+                border: 1px solid grey;
+                border-radius: 0px;
+             }
+ 
+             QComboBox::drop-down {
+                width: 32px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+             }
+ 
+             QComboBox::down-arrow {
+                image: C:\Users\Oluwayemisi\Downloads
+                width: 32;
+                height: 32;
+             }</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub4A1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>A1</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub4B2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>B2</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub4B3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>B3</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub4C4">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C4</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub4C5">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>60</y>
+         <width>51</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C5</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub4C6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C6</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub4D7">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>D7</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub4E8">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>E8</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub4F9">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>F9</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub4AR">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>80</y>
+         <width>51</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>A/R</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_8">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>340</y>
+        <width>281</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_8{
+border-radius: 10px;
+
+
+}  
+
+  
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QComboBox" name="sube">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+               border: 1px solid grey;
+                border-radius: 0px;
+             }
+ 
+             QComboBox::drop-down {
+                width: 32px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+             }
+ 
+             QComboBox::down-arrow {
+                image: C:\Users\Oluwayemisi\Downloads
+                width: 32;
+                height: 32;
+             }</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub5A1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>A1</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub5B2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>B2</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub5B3">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>B3</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub5C4">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>60</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C4</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub5C5">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>60</y>
+         <width>51</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C5</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub5C6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>C6</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub5D7">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>D7</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub5E8">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>E8</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub5F9">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>80</y>
+         <width>82</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>F9</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="sub5AR">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>80</y>
+         <width>51</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>A/R</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>150</y>
+        <width>271</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 13pt &quot;Arial&quot;;
+background-color: rgb(238, 238, 238);</string>
+      </property>
+      <property name="text">
+       <string>Subject 1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>300</y>
+        <width>271</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 13pt &quot;Arial&quot;;
+background-color: rgb(238, 238, 238);</string>
+      </property>
+      <property name="text">
+       <string>Subject 2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>10</y>
+        <width>271</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 13pt &quot;Arial&quot;;
+background-color: rgb(238, 238, 238);</string>
+      </property>
+      <property name="text">
+       <string>Subject 3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>160</y>
+        <width>271</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 13pt &quot;Arial&quot;;
+background-color: rgb(238, 238, 238);</string>
+      </property>
+      <property name="text">
+       <string>Subject 4</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>310</y>
+        <width>271</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 13pt &quot;Arial&quot;;
+background-color: rgb(238, 238, 238);</string>
+      </property>
+      <property name="text">
+       <string>Subject 5</string>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="nextTweak">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>440</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
