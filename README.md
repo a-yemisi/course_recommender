@@ -2,7 +2,7 @@
 
 
 #Requirements for running the Solution.
-For this solution you need to have the following packages installed
+For this solution you need to have the following packages installed:
 PyQt5
 mysql.connector
 webbrowser
